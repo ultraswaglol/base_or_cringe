@@ -64,28 +64,31 @@ lib/
 Шаги для запуска:
 Клонирование репозитория и получение зависимостей:
 
-code
-Bash
+```code
 git clone <url-репозитория>
 cd base_or_cringe
 flutter pub get
+```
+
 Генерация системных иконок приложения:
 При изменении иконки в ассетах выполните команду для генерации ресурсов под все плотности экранов Android:
 
-code
-Bash
+```code
 flutter pub run flutter_launcher_icons
+```
 Запуск проекта на устройстве или эмуляторе:
 Для тестирования нативных элементов разметки (включая рекламу) на некоторых версиях Android с эмуляторами рекомендуется отключать Impeller:
 
-code
-Bash
+```code
 flutter run --no-impeller
+```
+
 Сборка релизного билда (AAB) для загрузки в RuStore:
 
-code
-Bash
+```code
 flutter build appbundle --release
+```
+
 Настройка рекламных блоков
 Рабочие идентификаторы блоков (AdUnitId) настраиваются в файле:
 lib/features/assessment/presentation/pages/assessment_page.dart
